@@ -1,0 +1,3 @@
+Model,Accuracy (Top1),Precision,Recall,F1-Score,Fitness
+yolov12n-cls,0.9485,0.9132,0.9429,0.9278,0.9733
+yolo26n-cls,0.9614,0.9343,0.9704,0.952,0.9798

@@ -1,0 +1,2 @@
+Model,Accuracy (Top1),Precision,Recall,F1-Score,Fitness
+yolo26n-cls,0.9522,0.9176,0.9437,0.9304,0.9761
