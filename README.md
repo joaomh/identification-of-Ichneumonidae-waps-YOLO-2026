@@ -110,52 +110,6 @@ if __name__ == "__main__":
     print(distribution_df.to_string(index=False))
 ```
 
-```python
-import os
-import yaml
-from ultralytics import YOLO
-
-def create_yaml(output_dir, classes):
-    """Creates the data.yaml file required for YOLOv8 training."""
-    data_config = {
-        'path': os.path.abspath(output_dir),
-        'train': 'train/images',
-        'val': 'val/images',
-        'test': 'test/images',
-        'names': {i: name for i, name in enumerate(classes)}
-    }
-    
-    yaml_path = os.path.join(output_dir, 'data.yaml')
-    with open(yaml_path, 'w') as f:
-        yaml.dump(data_config, f, default_flow_style=False)
-    return yaml_path
-
-def start_training(yaml_path):
-    """Initiates YOLOv8 training with the rescaled 512x512 inputs."""
-    # Load a pretrained YOLOv8 model
-    model = YOLO('yolov8n.pt') 
-
-    # Start training
-    model.train(
-        data=yaml_path,
-        epochs=100,
-        imgsz=512,  # Matches the rescale from Script 1
-        batch=16,
-        name='Ichneumonoidea_Identification'
-    )
-
-if __name__ == "__main__":
-    # Define your taxonomic classes based on the DAPWH dataset
-    CLASSES = ['Ichneumonidae', 'Braconidae']
-    PROCESSED_DATA_DIR = "data/processed"
-    
-    yaml_file = create_yaml(PROCESSED_DATA_DIR, CLASSES)
-    print(f"Created configuration: {yaml_file}")
-    
-    print("Starting Training...")
-    start_training(yaml_file)
-```
-
 ## Script 2: Traning YOLO models (`yolo_train.py`)
 
 This script is responsible for training the YOLOv12 and YOLOv26 architectures. Before execution, ensure that the pre-trained weights (.pt files) are located in the project's root directory.
