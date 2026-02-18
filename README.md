@@ -1,18 +1,20 @@
-# 🐝 Automated identification of Ichneumonoidea waps:
-## Integrating YOLO with HiResCAM for Explainable AI
+# 🐝 Automated identification of Ichneumonoidea wasps via YOLO-based deep learning: Integrating HiresCam for Explainable AI
+This repository contains the data processing pipelines and training workflows developed for the Automated identification of Ichneumonoidea wasps via YOLO-based deep learning: Integrating HiresCam for Explainable AI.
+![Workflow](flow_images_yolo_cam.png)
 
+## Dataset
 The DAPWH dataset is publicly available on Zenodo:
 
 - [https://zenodo.org/records/18501018](https://zenodo.org/records/18501018)
 - DOI: [https://doi.org/10.5281/zenodo.18501017](https://doi.org/10.5281/zenodo.18501017)
 
-# Download the file using curl
+### Download the file using curl
 
 ```bash
 curl -L "https://zenodo.org/records/18501018/files/DAPWH.zip?download=1" -o DAPWH.zip
 ```
 
-# Create raw data directory and extract
+### Create raw data directory and extract
 ```bash
 mkdir -p data/raw
 unzip DAPWH.zip -d data/raw/
