@@ -100,8 +100,8 @@ def run_annotated_gradcam():
             #cv2.rectangle(visualization_bgr, (0, 0), (original_w, 150), (0, 0, 0), -1)
             
             # Draw text (Scale font based on image size)
-            font_scale = max(2.0, original_w / 1000.0) 
-            thickness = max(2, int(font_scale * 2))
+            # font_scale = max(2.0, original_w / 1000.0) 
+            # thickness = max(2, int(font_scale * 2))
             
             #cv2.putText(visualization_bgr, text, (20, 100), 
                         #cv2.FONT_HERSHEY_SIMPLEX, font_scale, color, thickness)
