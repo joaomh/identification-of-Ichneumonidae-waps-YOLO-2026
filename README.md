@@ -1,4 +1,48 @@
-# 🐝 Automated identification of Ichneumonoidea wasps via YOLO-based deep learning: Integrating HiresCam for Explainable AI
+<h1 align="center">
+  Automated identification of Ichneumonoidea wasps
+</h1>
+
+<h3 align="center">
+  Automated identification of Ichneumonoidea wasps via YOLO-based deep learning: Integrating HiresCam for Explainable AI
+</h3>
+
+<p align="center">
+  <strong>João Manoel Herrera Pinheiro</strong><sup>1</sup> &middot;
+  <strong>Gabriela do Nascimento Herrera</strong><sup>2</sup> &middot;
+  <strong>Alvaro Doria dos Santos</strong><sup>3</sup> &middot;
+  <strong>Luciana Bueno dos Reis Fernandes</strong><sup>2</sup> &middot;
+  <strong>Ricardo V. Godoy</strong><sup>1</sup><br>
+  <strong>Eduardo A. B. Almeida</strong><sup>4</sup> &middot;
+  <strong>Helena Carolina Onody</strong><sup>5</sup> &middot;
+  <strong>Marcelo Andrade da Costa Vieira</strong><sup>1</sup> &middot;
+  <strong>Angelica Maria Penteado-Dias</strong><sup>2</sup> &middot;
+  <strong>Marcelo Becker</strong><sup>1</sup>
+</p>
+
+<p align="center">
+  <sup>1</sup> São Carlos School of Engineering, University of São Paulo (USP), São Carlos, Brazil<br>
+  <sup>2</sup> Department of Ecology and Evolutionary Biology, Federal University of São Carlos (UFSCar), São Carlos, Brazil<br>
+  <sup>3</sup> Federal University of Tocantins (UFT), Porto Nacional, Brazil<br>
+  <sup>4</sup> Department of Biology (FFCLRP), University of São Paulo (USP), Ribeirão Preto, Brazil<br>
+  <sup>5</sup> Deputado Jesualdo Cavalcanti Campus, State University of Piauí (UESPI), Corrente, Brazil
+</p>
+
+<p align="center">
+  <em> preprint, 2026</em>
+</p>
+
+<p align="center">
+  <a href="https://arxiv.org/abs/2403.09548">
+    <img src="https://img.shields.io/badge/Paper-PDF-b31b1b?style=flat-square&logo=arxiv&logoColor=white" alt="Paper">
+  </a>&nbsp;
+  <a href="https://arxiv.org/abs/2403.09548">
+    <img src="https://img.shields.io/badge/arXiv-2606.31941-b31b1b?style=flat-square&logo=arxiv&logoColor=white" alt="arXiv">
+  </a>&nbsp;
+  <a href="https://doi.org/10.1109/IEEEDATA.2026.3683381">
+    <img src="https://img.shields.io/badge/Dataset-Available-2ea44f?style=flat-square&logo=databricks&logoColor=white" alt="Dataset">
+  </a>
+</p>
+
 This repository contains the data processing pipelines and training workflows developed for the Automated identification of Ichneumonoidea wasps via YOLO-based deep learning: Integrating HiresCam for Explainable AI.
 ![Workflow](flow_images_yolo_cam.png)
 
